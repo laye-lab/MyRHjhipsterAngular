@@ -15,7 +15,7 @@
     "enableSwaggerCodegen": false,
     "enableTranslation": true,
     "jhiPrefix": "jhi",
-    "languages": [],
+    "languages": ["en"],
     "messageBroker": false,
     "prodDatabaseType": "mysql",
     "searchEngine": false,
@@ -32,6 +32,15 @@
     "entitySuffix": "",
     "reactive": true,
     "clientTheme": "none",
-    "clientThemeVariant": ""
+    "clientThemeVariant": "",
+    "entities": [],
+    "blueprints": [],
+    "otherModules": [],
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "pages": [],
+    "creationTimestamp": 1618491252306,
+    "jwtSecretKey": "MDQ1NTE0ZjhmZjYwZTk4NzY4MTNmMDZlYmIyYWEyYTU5MzcyOTE5NjA1MWNiN2U2MzRmYWM1Y2FjMjZhN2ExNzQyNTAxZmQwZDhhNGFhYWNhMzYyY2MzZTU1MDkzY2Q4OWUxODMzYjViZmEzODRlNTY1MWJiZTgxOTcwM2U2YWY=",
+    "nativeLanguage": "en"
   }
 }
