@@ -19,7 +19,52 @@ application {
     authenticationType jwt,
     prodDatabaseType mysql,
   }
-  entities *
+  entities Conge,
+  CongeData,
+  Tracker 
+  
+}
+
+application {
+  config {
+    baseName Myuser,
+    applicationType microservice,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities User,
+  Role, 
+  Agent
+
+}
+
+entity User {
+	Id Integer required 
+	Email String required 
+	Matricule  Integer required 
+}
+
+entity Role {
+	Id Integer required 
+	Description String required 
+}
+
+entity Agent {
+	
+	Id Integer required 
+    Equipe Integer required 
+    Matricule Integer required 
+    Nom String required
+    Fonction String required
+    Statut String required
+    Taux Float required 
+    Affectation  String required
+    Etablissement String required
+    Direction String required
+    MatriculeN1 Integer 
+    NomN1 String 
+    ServiceSecteur String 
 }
 
 
@@ -51,11 +96,12 @@ entity Recuperation {
 
 relationship OneToMany {
    Conge to CongeData
+   Agent to Role
 }
-relationship OneToOne {
+relationship OneToOne { 
     Conge to Tracker
     Conge to Recuperation
-    
+    User to Agent
 }
 
     
